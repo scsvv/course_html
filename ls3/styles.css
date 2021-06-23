@@ -1,0 +1,27 @@
+/* * - все елементі */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content, header{
+    padding-top: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+header > h2, footer > h2{
+    color: white;
+}
+
+main > h2{
+    color: red;
+}
+
+body > header.content{
+    background-color: brown;
+}
+
+header.header#header{
+    background-color: brown;
+}
