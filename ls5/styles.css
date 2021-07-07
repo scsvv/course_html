@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;  
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.top > *{
+    display: inline-block;
+    width: 49%;
+}
+
+.nav{
+    text-align: end;
+}
+
+.top h1{
+    color: white;
+    font-size: 50px;
+}
+.top a{
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.middle{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 200px;
+    font-size: 90px;
+}
+
+.middle h2{
+    background-color: rgba(255, 255, 255, 0.438);
+    display: inline-block;
+}
