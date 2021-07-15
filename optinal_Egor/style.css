@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.catalog{
+    padding-top: 20px;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.catalog > div.card{
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    background-color: brown;
+}
