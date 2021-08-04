@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: 300px 500px 500px;
+    grid-template-rows: 400px 400px 300px 300px;
+    grid-template-areas: 
+    "p1 p1 p2"
+    "p1 p1 p3"
+    "p4 p5 p6"
+    "p7 p8 p8";
+
+    display: none;
+}
+
+.goods{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g1{
+    background-image: url('./img/2.jpg');
+    grid-area: p1;
+}
+.g2{
+    background-image: url('./img/3.jpg');
+    grid-area: p2;
+}
+.g3{
+    background-image: url('./img/3.jpg');
+    grid-area: p3;
+}
+.g4{
+    background-image: url('./img/4.jpg');
+    grid-area: p4;
+}
+.g5{
+    background-image: url('./img/5.jpg');
+    grid-area: p5;
+}
+.g6{
+    background-image: url('./img/6.png');
+    grid-area: p6;
+}
+.g7{
+    background-image: url('./img/7.jpg');
+    grid-area: p7;
+}
+.g8{
+    background-image: url('./img/8.png');
+    grid-area: p8;
+}
+
+.messanger{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "contact dialog emoji"
+    ;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: 5vh 95vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    height: 50px;
+    background-color: brown;
+    border: 1px solid white;
+    
+}
+
+.dialog{
+    grid-area: dialog;
+}
+
+.emoji{
+    grid-area: emoji;
+}
+
+.logo{
+    height: 5vh;
+}
