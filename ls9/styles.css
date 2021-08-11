@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.team{
+    position: relative;
+    min-height: 600px;
+    background-image: url('https://cdn.team7-home.com/fileadmin/_processed_/2/c/csm_karriere-bei-team7_9949a72e23.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position-x: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+button.text{
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    align-self:flex-end;
+    font-size: 100px;
+    color: white;
+    border: 1px solid white;
+
+    transition: 0.1s;
+}
+
+button.text:hover{
+    background-color: darkblue;
+}
+
+button.text:active{
+    transform: scale(.9);
+}
+
+li{
+    font-size: 30px;
+}
+
+li:last-child{
+    color: rgb(37, 37, 39);
+}
+
+a{
+    font-size: 100px;
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: forestgreen;
+}
+a:hover{
+    color: brown;
+}
+a:active{
+    color: yellow;
+}
+
+/*::after, ::before*/
+
+.aaa:checked + label{
+    color: green;
+}
+
+label{
+    color: brown;
+}
