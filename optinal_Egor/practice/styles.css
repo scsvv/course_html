@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.galerry{
+    display: grid;
+    grid-template-areas: 
+    "fe fe mc"
+    "fe fe amg"
+    "re al as"
+    "wi wi wi"
+    "alr haas alt";
+
+    grid-template-rows: 300px 300px 300px 300px 300px;
+}
+
+section.galerry > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .5s;
+
+}
+
+section.galerry > div:hover{
+    background-size: 120%;
+}
+
+section.galerry > div:hover > div.f1_wrapper{
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+section.galerry > div.ferrari{
+    grid-area: fe;
+    background-image: url('./img/1.jpg');
+}
+
+section.galerry > div.mclaren{
+    grid-area: mc;
+    background-image: url('./img/2.jpg');
+}
+
+section.galerry > div.amg{
+    grid-area: amg;
+    background-image: url('./img/3.jpg');
+}
+
+section.galerry > div.redbull{
+    grid-area: re;
+    background-image: url('./img/4.jpg');
+}
+
+section.galerry > div.alpine{
+    grid-area: al;
+    background-image: url('./img/5.jpg');
+}
+
+section.galerry > div.aston_martin{
+    grid-area: as;
+    background-image: url('./img/6.jpg');
+}
+
+section.galerry > div.alfa_tauri{
+    grid-area: alt;
+    background-image: url('./img/7.jpg');
+}
+
+section.galerry > div.alfa_romeo{
+
+    grid-area: alr;
+    background-image: url('./img/8.jpg');
+}
+
+
+section.galerry > div.williams{
+    grid-area: wi;
+    background-image: url('./img/9.jpg');
+}
+
+section.galerry > div.haas{
+    grid-area: haas;
+    background-image: url('./img/10.jpg');
+}
+
+h2.title{
+    color: white;
+    z-index: 30;
+    font-size: 40px;
+}
+
+div.f1_wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: .3s;
+}
+
+section.galerry > div:hover > div.drivers > .d_t, section.galerry > div:hover > div.drivers > .d_n{
+    font-size: 20px;
+}
+
+.d_t, .d_n{
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+}
