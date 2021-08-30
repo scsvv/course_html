@@ -1,0 +1,272 @@
+@font-face{
+    font-family: "Philosopher";
+    src: url('../font/Philosopher-Bold.ttf');
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url('../font/Roboto-Light.ttf');
+}
+
+:root{
+    --oven-orange: #DC780B;
+    --oven-balck: #150C01;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto';
+}
+
+header{
+    margin-top: 30px;
+}
+
+header > .content > img{
+    position: absolute;
+    top: 30px;
+    left: 686px;
+    z-index: -1;
+}
+
+header > .content > .shadow{
+    position: absolute;
+    top: 619px;
+    left: 802.52px;
+    z-index: -1;
+}
+
+a:hover{
+    color: var(--oven-orange);
+}
+
+a{
+    color: var(--oven-balck);
+    text-decoration: none;
+}
+
+.content{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+button, a, p {
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    font-family: "Roboto";
+    justify-content: space-between;
+    line-height: 19px;
+}
+
+.nav_left-side{
+    display: flex;
+    align-items: center;
+}
+
+.nav_left-side > *{
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.nav_left-side > :first-child{
+    margin-right: 35px;
+}
+
+button.nav_right-side{
+    background-color: var(--oven-orange);
+    color: white;
+    width: 155px;
+    height: 46px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+h1.header_title{
+    font-size: 48.83px;
+    color: var(--oven-balck);
+}
+
+p.header_description{
+    font-size: 16px;
+    font-weight: 500px;
+    padding-top: 42px;
+}
+
+div.button_space{
+    padding-top: 50px;
+}
+
+button.first_button {
+    background-color: var(--oven-orange);
+    color: white;
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    margin-right: 70px;
+    font-size: 16px;
+}
+
+button.second_button {
+    background-color: white;
+    color: var(--oven-orange);
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1.5px solid var(--oven-orange);
+}
+
+.header_text{
+    padding-top: 162px;
+    width: 555px;
+}
+
+.main_title{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+main > .main_title > .feautures{
+    color: var(--oven-orange);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 115px;
+}
+
+main > .main_title > .title{
+    padding-top: 17px;
+    color: #150C01;
+    font-size: 31.25px;
+    text-align: center;
+}
+
+.main_title > img{
+    position: relative;
+}
+
+.left_img{
+    margin-left: 106px;
+}
+
+.middle_img {
+    margin-left: 302px;
+    margin-right: 302px;
+}
+
+.first_icon, .second_icon, .third_icon {
+    position: relative;
+    bottom: 76px;
+}
+
+.first_icon {
+    margin-left: 128.76px;
+}
+
+.second_icon {
+    margin-left: 346.82px;
+}
+
+.third_icon {
+    margin-left: 340px;
+}
+
+.description_title {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Philosopher";
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description > p{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+div.about_us > img.shadow {
+    position: absolute;
+    width: 600px;
+    height: 1200px;
+    left: -0px;
+    top: 1000.24px;
+}
+
+div.about_us > img{
+    position: absolute;
+    top: 1201.73px;
+    left: 150px;
+    border-radius: 35px;
+    z-index: -2;
+}
+
+div.text {
+    display: inline-block;
+    margin-top: 216px;
+    margin-left: 652px;
+}
+
+div.about_us > div.text > p{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--oven-orange);
+    opacity: 0.7;
+}
+
+div.text > h2{
+    padding-top: 10px;
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 41px;
+    color: var(--oven-balck);
+}
+
+div.text > h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+.Read_more {
+    background-color: var(--oven-orange);
+    color: white;
+    width: 142px;
+    height: 42px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    font-size: 16px;
+    margin-top: 29px
+}

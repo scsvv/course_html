@@ -1,0 +1,228 @@
+@font-face{
+    font-family:'Philosopher';
+    src:url('./Philosopher-bold.ttf');
+    font-family:'Roboto';
+    src:url('./Roboto-bold.ttf');
+}
+
+:root{
+    --own-orange: #DC780B;
+    --own-black: #150C01;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Philosopher';
+}
+button{
+    font-family: Roboto;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.header{
+    padding-top: 30px;
+}
+
+.nav{
+    display: flex;
+    font-size: 16px;
+    line-height: 18.75px;
+    justify-content: space-between;
+}
+a, p{
+    color:var(--own-black);
+    text-decoration:none;
+}
+a:hover{
+    color:var(--own-orange)
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left > *{
+    margin-right: 40px;
+}
+.left > :first-child{
+    margin-right: 35px;
+}
+a.nav_link{
+    font-family: Roboto;
+    opacity: 0.6;
+}
+a.nav_link:hover{
+    opacity: 0.9;
+}
+button.right{
+    padding: 13px 30px;
+    border:1px solid var(--own-orange);
+    background-color: #DC780B;
+    color: white;
+}
+.header_text{
+    padding-top:160px;
+    width: 555px;
+}
+.header_title{
+color:var(--own-black);
+font-size: 40px;
+position: relative;
+}
+p.header_description{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    opacity: 0.6;
+}
+.header_btn > button{
+    font-weight: 500;
+    padding:20px 40px
+}
+.header_btn > button:hover{
+    transform:scale(.98) ;
+}
+.header_btn > *:first-child{
+    margin-right:30px;
+}
+.btn1{
+background-color: var(--own-orange);
+border:1px solid var(--own-orange);
+color: white;
+}
+.btn2{
+    background-color: white;
+    color: var(--own-orange);
+    border:1px solid var(--own-orange);
+}
+.header_img{
+    position: absolute;
+    top:0;
+    right:-150px;
+    z-index: -1;
+}
+.header2 > h1 {
+    position: absolute;
+    width: 99px;
+    height: 19px;
+    left: 670px;
+    top: 815px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color:var(--own-orange);
+    opacity: 0.7;
+}
+.header2 > h2{
+position: absolute;
+width: 352px;
+height: 35px;
+left: 544px;
+top: 841px;
+font-style: normal;
+font-weight: bold;
+font-size: 31.25px;
+line-height: 35px;
+text-transform: capitalize;
+color:var(--own-black);
+}
+.section_lol > .h1_1{
+position: absolute;
+width: 140px;
+height: 24px;
+left: 260px;
+top: 1041px;
+font-family: 'Philosopher';
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 24px;
+color:var(--own-black);
+}
+.section_lol > .h1_2{
+position: absolute;
+width: 153px;
+height: 24px;
+left: 644px;
+top: 1041px;
+font-family: Philosopher;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 24px;
+text-align: center;
+color: var(--own-black);
+}
+.section_lol > .h1_3{
+position: absolute;
+width: 131px;
+height: 24px;
+left: 1045px;
+top: 1041px;
+font-family: 'Philosopher';
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 24px;
+text-align: center;
+color:var(--own-black);
+}
+.section_lol > .pQ{
+    position: absolute;
+width: 300px;
+height: 68px;
+left: 180px;
+top: 1080px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color:var(--own-black);
+opacity: 0.7;
+}
+.section_lol > .pW{
+position: absolute;
+width: 300px;
+height: 68px;
+left: 570px;
+top: 1080px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: var(--own-black);
+opacity: 0.7;
+}
+.section_lol > .pE{
+position: absolute;
+width: 300px;
+height: 68px;
+left: 960px;
+top: 1080px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color:var(--own-black);
+opacity: 0.7;
+}

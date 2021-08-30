@@ -1,23 +1,27 @@
-@font-face{
-    font-family: 'Philosopher';
-    src: url('../font/Philosopher-Bold.ttf');
-}
-
-:root{
-    --own-orange: #DC780B; 
-    --own-black: #150C01;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Philosopher';
+@font-face {
+    font-family: "Philosoper";
+    src: url(../font/Philosoper-Bold.ttf;)
+}
+
+h1,h2, h3, h4, h5, h6{
+    font-family: "Pholosoper";
+}
+.content{
+    margin: auto;
+    width: 1140px;
+}
+:root{
+    --own-orange:#DC780B; 
+    --own-black: #150C01;
 }
 button{
     font-family: Roboto;
-    font-size: 16px;  
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -26,90 +30,81 @@ a, p{
     color: var(--own-black);
     text-decoration: none;
 }
-a:hover{
-    color: var(--own-orange);
-}
-
 .content{
     position: relative;
     margin: 0 auto;
     width: 1140px;
 }
-
 .header{
     padding-top: 31px;
     user-select: none;
 }
-
-.nav{
-    line-height: 18.75px;
-    display: flex;  
-    justify-content: space-between;
-}
-.nav__left-side{
+.nav_left-side{
     display: flex;
     align-items: center;
 }
-.nav__left-side > *{
+
+.nav_left-side > *{
     margin-right: 40px;
 }
-.nav__left-side > *:first-child{
+.nav_left-side > * > :first-child{
     margin-right: 35px;
 }
-a.nav__link{
+.nav{
+    line-height: 18.75px;
+    display: flex;
+    justify-content: space-between;
+}
+a.nav_link{
     opacity: 0.6;
 }
 a.nav__link:hover{
     opacity: 1;
 }
-
-button.nav__right{
-    padding: 14px 30px;
+button.nav_right{
+    padding:14px 30px;
     border: 1px solid var(--own-orange);
     background-color: var(--own-orange);
     color: white;
 }
-
-.header__text{
+.header_text{
     padding-top: 162px;
     width: 555px;
 }
 
-h1.header__title{
+h1.header_title{
     font-size: 48.83px;
     line-height: 58px;
     color: var(--own-black);
     margin-bottom: 42px;
-}
 
-p.header__description{
+}
+p.header_description{
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 50px;
+    line-height: 24px ;
 }
 .header_buttons > button{
-        font-weight: 500;
-        padding: 20px 40px;
-        border: 1px solid var(--own-orange);
+    font-weight: 500;
+    padding: 20px 40px;
+    border: 1px solid var(--own-orange);
 }
 .header_buttons > button:hover{
     transform: scale(.98);
 }
-
-.header_buttons > *:first-child{
+.header_buttons >*:first-child{
     margin-right: 30px;
 }
 .btn_1{
     background-color: var(--own-orange);
     color: white;
 }
-
 .btn_2{
     background-color: white;
     color: var(--own-orange);
 }
-
-.header__image{
+.header_image{
     position: absolute;
     top: 30px;
     right: -150px;
