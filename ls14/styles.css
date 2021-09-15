@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    position: relative;
+    width: 300px;
+    min-height: 50px;
+    border: 1px solid green;
+    color: white;
+}
+.loader_text{
+    position: absolute;
+    font-size: 40px;
+    left: 15%;
+    user-select: none; /*штука, которая запрещает копировать*/
+}
+.full{
+    background-color: green;
+    min-height: 50px;
+    animation: loader 10s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        width: 0%;
+    }
+    80%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.lds-dual-ring {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
