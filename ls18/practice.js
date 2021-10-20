@@ -33,3 +33,10 @@ for(let i = min_value; i <= max_value; i++){
 }
 console.log(sum, multy);
 
+let first_string = "Великолепный век";
+let second_string = "";
+
+/*for( перебор в обратном порядке ){
+    second_string.push(letter);
+}
+*/
