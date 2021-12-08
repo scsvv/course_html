@@ -1,0 +1,201 @@
+:root{
+    --color-red: #F7515C;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    src: url('./font/Montserrat-Black.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: url('./font/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('./font/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('./font/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('./font/NunitoSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'SF Pro';
+    src: url('./font/SFPRO.OTF');
+}
+@font-face {
+    font-family: 'Popins';
+    src: url('./font/Poppins-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'NunitoSans';
+}
+li{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    color: #282A30;
+}
+.block-title{
+    font-family: 'Montserrat';
+}
+.block-text{
+    font-family: 'NunitoSans';
+}
+.content{
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+.btn{
+    background-color: var(--color-red);
+    color: #fff;
+    padding: 25px 55px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border: none;
+}
+
+/**/
+.navbar{
+    margin: 0 auto;
+    top: 0;
+    min-height: 100px;
+    max-width: 92vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+}
+.navbar  a{
+    color: #282A30;
+    font-size: 19px    ;
+}
+.navbar > .site-title{
+    font-size: 40px;
+    font-family: 'SF Pro';
+}
+.navbar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-links > li:not(:last-child){
+    margin-right: 106px;
+}
+
+.navbar > .navbar-icon-section > img:first-child{
+    margin-right: 90px;
+}
+.nav-card:hover, .nav-search:hover{
+    cursor: pointer;
+}
+.nav-card:active, .nav-search:active{
+    transform: scale(.9);
+}
+
+.header{
+    position: relative;
+    padding-top: 90px;
+    margin-bottom: 319px;
+}
+.header > section.content > div{
+    display: inline-block;
+}
+.header-text{
+    vertical-align: top;
+    width: 630px;
+    padding-top: 120px; 
+    padding-bottom: 172px;
+}
+.header-optinal-title{
+    color: var(--color-red);
+    font-family: 'Popins';
+    font-size: 20px;
+    margin-bottom: 62px;
+}
+.header-title{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 67px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.header-buttonspace > *{
+    display: inline-block;
+}
+.header-buttonspace > .btn{
+    margin-right: 120px;
+}
+.header-watch{
+    position: relative;
+}
+.header-watch > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-btn-cyrcle{
+    position: relative;
+    width: 58px;
+    height: 59px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 70px #00000025;
+    margin-right: 24px;
+}
+.btn-triangle{
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    background-color: #282A30;
+    clip-path: polygon(0 0, 50% 50%, 0 100%);
+    width: 30px;
+    height: 21px;
+}
+.header-watch span{
+    font-weight: 700;
+    font-size: 22px;   
+}
+.header-image{
+    padding-left: 200px;
+}
+
+/**/
+section.about > div{
+    display: inline-block;
+}
+.about-img-content{
+    margin-right: 128px;
+}
+.about-text-content{
+    width: 518px;
+    vertical-align: top;
+    padding-top: 50px;
+}
+.about-text-content > h5{
+    font-size: 60px;
+    font-weight: 700;
+}
+.about-text-content > h3 {
+    font-size: 100px;
+    margin-bottom: 55px;
+}
+.about-text-content > p {
+    font-size: 22px;
+    color: #282A3080;
+    margin-bottom: 50px;
+}
+
+
+

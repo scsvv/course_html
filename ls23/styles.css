@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+a, 
+p{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.wrapper{
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+.calculate{
+    position: relative;
+    animation: in-focus 1s ease-in-out;
+    background-color: #ccc;
+    width: 510px;
+    min-height: 610px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'screen screen screen screen'
+    'clean pm procent division'
+    'seven eight nine mod'
+    'four five six minus'
+    'one two three plus'
+    'zero zero coma eq';
+    user-select: none;
+}
+.screen{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 70px;
+    grid-area: screen;
+    background-color: rgb(47, 18, 18);
+}
+.btn{
+    border-radius: 50%;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:active{
+    transform: scale(95%);
+}
+.btn:hover{
+    cursor: pointer;
+    transition: .1s;
+}
+.action{
+    background-color: #FF9524;
+    color: white;
+}
+.action:hover{
+    background-color: #d36e03;
+}
+.numbers{
+    background-color: #333333;
+    color: white;
+}
+.numbers:hover{
+    background-color: #202020;
+}
+
+div.zero{
+    border-radius: 20px;
+    grid-area: zero;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.coma{
+    grid-area: coma;
+}
+.division{
+    grid-area: division;
+}
+.mod{
+    grid-area: mod;
+}
+.minus{
+    grid-area: minus;
+}
+.plus{
+    grid-area: plus;
+}
+.eq{
+    grid-area: eq;
+}
+
+
+@keyframes in-focus {
+    0% {
+        top: 100vh; 
+    }
+    100%{
+        top: 0vh;
+    }
+}
